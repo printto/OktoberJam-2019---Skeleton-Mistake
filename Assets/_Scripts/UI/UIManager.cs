@@ -26,7 +26,7 @@ public class UIManager
 
     public void Update()
     {
-
+       
     }
 
     public void SelectedItemHandleMouseDrag(PointerEventData eventData)
@@ -46,6 +46,7 @@ public class UIManager
         {
             IngredientManager.Instance.ingredientList.Add(item);
             OnDragItem.gameObject.SetActive(!OnDragItem.gameObject.activeSelf);
+            Managers.Instance.m_CameraShake.TriggerShake();
 
         }
         else
