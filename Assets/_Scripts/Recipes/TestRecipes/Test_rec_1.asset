@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bcf7345997103b4eb7fb0fdc1098bb8, type: 3}
   m_Name: Test_rec_1
   m_EditorClassIdentifier: 
-  successSprite: {fileID: 0}
+  successSprite: {fileID: 21300000, guid: 0941679c69bfe8c41b97599b828103c4, type: 3}
   recipeCode:
   - {fileID: 11400000, guid: 18cfeda33b05603438bbed129934c6b7, type: 2}
   - {fileID: 11400000, guid: 9fe40ed806f3c464486288c75bf3c585, type: 2}
-  creatureName: Test Creature 1
+  creatureName: Veggie Sandwish
   description: Whoa you accidentally got debug creature

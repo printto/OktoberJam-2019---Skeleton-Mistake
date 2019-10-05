@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bcf7345997103b4eb7fb0fdc1098bb8, type: 3}
   m_Name: Test_rec_default
   m_EditorClassIdentifier: 
-  successSprite: {fileID: 0}
+  successSprite: {fileID: 21300000, guid: 9c7fadfad34684243bdb48f51365311c, type: 3}
   recipeCode: []
-  creatureName: Default debugging
+  creatureName: Salad
   description: Whoa you accidentally got default debug creature

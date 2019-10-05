@@ -7,19 +7,9 @@ public class RecipeBase : ScriptableObject
 {
 
     [Header("Recipe variables")]
-    public GameObject successSprite;
+    public Sprite successSprite;
     public IngredientBase[] recipeCode;
     public string creatureName;
     public string description;
-
-    public string getCode()
-    {
-        string temp = "";
-        foreach(IngredientBase ingre in recipeCode)
-        {
-            temp += ingre.ingredientName;
-        }
-        return temp;
-    }
 
 }

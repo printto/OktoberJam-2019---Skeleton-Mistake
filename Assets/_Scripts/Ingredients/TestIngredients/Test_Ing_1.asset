@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2feba69b0657fcc4682ecf51e91b5e0b, type: 3}
   m_Name: Test_Ing_1
   m_EditorClassIdentifier: 
-  ingredientSprite: {fileID: 0}
-  ingredientName: Test part 1
+  ingredientSprite: {fileID: 21300000, guid: c24da31d3832431479a175c7355e7680, type: 3}
+  ingredientName: Carrot
   description: This part is for testing 1
