@@ -16,6 +16,11 @@ public class RecipeManager : MonoBehaviour
                 return recipe;
             }
         }
+        if (cookbook is SpecialCookBookBase)
+        {
+            SpecialCookBookBase tempCookBook = cookbook as SpecialCookBookBase;
+            return tempCookBook.checkSpecialRecipe(IngredientManager.Instance.ingredientList);
+        }
         return cookbook.defaultRecipe;
     }
 
