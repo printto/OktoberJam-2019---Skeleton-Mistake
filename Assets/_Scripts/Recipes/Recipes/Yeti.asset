@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bcf7345997103b4eb7fb0fdc1098bb8, type: 3}
+  m_Name: Yeti
+  m_EditorClassIdentifier: 
+  successSprite: {fileID: 0}
+  recipeCode:
+  - {fileID: 11400000, guid: 5fccd070fd0b18a4aba4d411e9002ad1, type: 2}
+  - {fileID: 11400000, guid: 737224ee99bf04a43b777219d297832f, type: 2}
+  - {fileID: 11400000, guid: 88e4f4eeef638fe4c8a97f8a48258651, type: 2}
+  - {fileID: 11400000, guid: c0b2ff8e442420647b023c4754a83a77, type: 2}
+  creatureName: Yeti
+  description: 

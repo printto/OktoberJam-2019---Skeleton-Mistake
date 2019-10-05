@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bcf7345997103b4eb7fb0fdc1098bb8, type: 3}
+  m_Name: Nessie
+  m_EditorClassIdentifier: 
+  successSprite: {fileID: 0}
+  recipeCode:
+  - {fileID: 11400000, guid: 4a123e3f89b25c5428be4646e54143ab, type: 2}
+  - {fileID: 11400000, guid: 1095fd081bb07d54c93cccb012b2378b, type: 2}
+  - {fileID: 11400000, guid: 4b0cccaa974f21648abc27980f0ef339, type: 2}
+  - {fileID: 11400000, guid: 793d694537138d941ba3ec0d2e0d34ce, type: 2}
+  creatureName: Snake
+  description: 
