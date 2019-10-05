@@ -6,7 +6,6 @@ public class Managers
 {
     public static Managers Instance;
     public UIManager m_UIManager;
-
     public Managers()
     {
         m_UIManager = new UIManager();

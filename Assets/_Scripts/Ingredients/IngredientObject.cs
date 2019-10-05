@@ -4,20 +4,43 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class IngredientObject : MonoBehaviour, IPointerClickHandler
+public class IngredientObject : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
 {
 
     public IngredientBase ingredientScript;
-
-    public void OnPointerClick(PointerEventData eventData)
+    private Vector3 currentObjectPosition;
+    public void OnDrag(PointerEventData eventData)
     {
-        IngredientManager.Instance.ingredientList.Add(ingredientScript);
+        Managers.Instance.m_UIManager.SelectedItemHandleMouseDrag(eventData);
+
     }
 
-    // Start is called before the first frame update
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        Sprite currentImage = this.GetComponent<Image>().sprite;
+        Debug.Log("sd");
+        float OFFSET = 50f;
+        currentObjectPosition = this.transform.position;
+        currentObjectPosition.x = currentObjectPosition.x + OFFSET;
+        currentObjectPosition.z = currentObjectPosition.z - OFFSET;
+        Managers.Instance.m_UIManager.OnDragItem.gameObject.SetActive(!Managers.Instance.m_UIManager.OnDragItem.gameObject.activeSelf);
+
+        Managers.Instance.m_UIManager.OnDragItem.position = currentObjectPosition;
+        Managers.Instance.m_UIManager.OnDragItem.GetComponent<Image>().sprite = currentImage;
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        Managers.Instance.m_UIManager.SelectedItemHandleMouseDrop(eventData, ingredientScript);
+    }
+
     void Start()
     {
         gameObject.GetComponent<Image>().sprite = ingredientScript.ingredientSprite;
     }
+
+
+
 
 }
