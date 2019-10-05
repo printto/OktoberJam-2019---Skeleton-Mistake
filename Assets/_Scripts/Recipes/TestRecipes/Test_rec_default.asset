@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2feba69b0657fcc4682ecf51e91b5e0b, type: 3}
-  m_Name: Test_Ing_1
+  m_Script: {fileID: 11500000, guid: 1bcf7345997103b4eb7fb0fdc1098bb8, type: 3}
+  m_Name: Test_rec_default
   m_EditorClassIdentifier: 
-  ingredientSprite: {fileID: 0}
-  ingredientName: Test part 1
-  description: This part is for testing 1
+  successSprite: {fileID: 0}
+  recipeCode: []
+  creatureName: Default debugging
+  description: Whoa you accidentally got default debug creature
