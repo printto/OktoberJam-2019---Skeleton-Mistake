@@ -2,17 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RecipeManager
+public class RecipeManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public CookBookBase cookbook;
+
+    public RecipeBase generateResult()
     {
-        
+        foreach (RecipeBase recipe in cookbook.GetRecipes())
+        {
+            if(Utility.CompareLists<IngredientBase>(recipe.recipeCode, IngredientManager.Instance.ingredientList))
+            {
+                return recipe;
+            }
+        }
+        return cookbook.defaultRecipe;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2feba69b0657fcc4682ecf51e91b5e0b, type: 3}
-  m_Name: Test_Ing_3
+  m_Script: {fileID: 11500000, guid: 0cb7aa791efce0841a97091a704bcfde, type: 3}
+  m_Name: Cookbook_Test
   m_EditorClassIdentifier: 
-  ingredientSprite: {fileID: 21300000, guid: 8dba693aa7c64ed48ba04028d963e6b9, type: 3}
-  ingredientName: Onion
-  description: This part is for testing 3
-  ingredientType: 3
+  recipes:
+  - {fileID: 11400000, guid: 328e54b0e81656c4c90e40774e69cceb, type: 2}
+  defaultRecipe: {fileID: 11400000, guid: 9987a62a2a3e3ba4e90ddb7d6d3e6eec, type: 2}

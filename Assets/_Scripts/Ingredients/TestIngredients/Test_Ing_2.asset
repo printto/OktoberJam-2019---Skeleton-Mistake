@@ -15,3 +15,4 @@ MonoBehaviour:
   ingredientSprite: {fileID: 21300000, guid: 126bf6c8be0a9ec48a8b9bd541d1e16a, type: 3}
   ingredientName: Bread
   description: This part is for testing 3
+  ingredientType: 2

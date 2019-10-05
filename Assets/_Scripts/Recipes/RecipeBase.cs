@@ -8,7 +8,7 @@ public class RecipeBase : ScriptableObject
 
     [Header("Recipe variables")]
     public Sprite successSprite;
-    public IngredientBase[] recipeCode;
+    public List<IngredientBase> recipeCode;
     public string creatureName;
     public string description;
 
