@@ -15,3 +15,4 @@ MonoBehaviour:
   ingredientSprite: {fileID: 21300000, guid: c24da31d3832431479a175c7355e7680, type: 3}
   ingredientName: Carrot
   description: This part is for testing 1
+  ingredientType: 1

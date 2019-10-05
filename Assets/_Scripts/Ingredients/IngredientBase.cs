@@ -2,7 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Ingredient", menuName = "Ingredient")]
+public enum IngredientType
+{
+    generalIngredient,
+    headIngredient,
+    bodyIngredient,
+    armIngredient,
+    legIngredient,
+    tailIngredient,
+    extraIngredient/*,
+    specialSpecificIngredients,
+    specialAllHeadIngredients,
+    specialAllBodyIngredients,
+    specialAllArmIngredients,
+    specialAllLegIngredients,
+    specialAllTailIngredients,
+    specialAllExtraIngredients,
+    */
+}
+
+[CreateAssetMenu(fileName = "Ingredient", menuName = "Ingredient/Normal Ingredient")]
 public class IngredientBase : ScriptableObject
 {
 
@@ -10,5 +29,6 @@ public class IngredientBase : ScriptableObject
     public Sprite ingredientSprite;
     public string ingredientName;
     public string description;
+    public IngredientType ingredientType;
 
 }

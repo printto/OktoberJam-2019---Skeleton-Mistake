@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2feba69b0657fcc4682ecf51e91b5e0b, type: 3}
-  m_Name: Test_Ing_3
+  m_Name: Test_SP_2
   m_EditorClassIdentifier: 
-  ingredientSprite: {fileID: 21300000, guid: 8dba693aa7c64ed48ba04028d963e6b9, type: 3}
-  ingredientName: Onion
-  description: This part is for testing 3
-  ingredientType: 3
+  ingredientSprite: {fileID: 21300000, guid: a3162d8f94f54f446a7f60db9d449f85, type: 3}
+  ingredientName: Blender
+  description: Create 3D model
+  ingredientType: 6
