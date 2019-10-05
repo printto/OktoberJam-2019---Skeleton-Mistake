@@ -14,15 +14,38 @@ public class SpecialCookBookBase : CookBookBase
 
     public RecipeBase fourArmRecipe;
 
+    public RecipeBase HeadWingsConstantRecipe;
+    public RecipeBase HeadWingsRecipe;
+
+    public RecipeBase HayHeadRecipe;
+
+    public RecipeBase ArmAliveRecipe;
+
     public RecipeBase checkSpecialRecipe(List<IngredientBase> ingredients)
     {
-        if (Utility.ListAContainsListB<IngredientBase>(spiderRecipe.recipeCode, ingredients))
+        if (Utility.ListAContainsListB<IngredientBase>(ingredients, spiderRecipe.recipeCode))
         {
             return weirdSpiderRecipe;
         }
-        else if (WendigoChecker.Check(wendigoConstantRecipe.recipeCode, ingredients))
+        else if (WendigoChecker.Check(ingredients, wendigoConstantRecipe.recipeCode))
         {
             return wendigoRecipe;
+        }
+        else if (FourArmChecker.Check(ingredients))
+        {
+            return fourArmRecipe;
+        }
+        else if (HeadWingsChecker.Check(ingredients, HeadWingsConstantRecipe.recipeCode))
+        {
+            return HeadWingsRecipe;
+        }
+        else if (HayHeadChecker.Check(ingredients))
+        {
+            return HayHeadRecipe;
+        }
+        else if (ArmAliveChecker.Check(ingredients))
+        {
+            return ArmAliveRecipe;
         }
         return defaultRecipe;
     }
