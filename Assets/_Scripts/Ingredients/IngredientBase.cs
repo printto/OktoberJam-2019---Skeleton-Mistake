@@ -7,8 +7,8 @@ public class IngredientBase : ScriptableObject
 {
 
     [Header("Ingredient variables")]
-    GameObject ingredientSprite;
-    string ingredientName;
-    string description;
+    public GameObject ingredientSprite;
+    public string ingredientName;
+    public string description;
 
 }
