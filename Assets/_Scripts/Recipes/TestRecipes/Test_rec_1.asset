@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bcf7345997103b4eb7fb0fdc1098bb8, type: 3}
+  m_Name: Test_rec_1
+  m_EditorClassIdentifier: 
+  successSprite: {fileID: 21300000, guid: 0941679c69bfe8c41b97599b828103c4, type: 3}
+  recipeCode:
+  - {fileID: 11400000, guid: 18cfeda33b05603438bbed129934c6b7, type: 2}
+  - {fileID: 11400000, guid: 9fe40ed806f3c464486288c75bf3c585, type: 2}
+  creatureName: Veggie Sandwish
+  description: Whoa you accidentally got debug creature
