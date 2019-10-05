@@ -12,10 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12d25b2d568340547815189135ec547c, type: 3}
   m_Name: CookbookWithSpecialCases
   m_EditorClassIdentifier: 
-  recipes: []
-  defaultRecipe: {fileID: 0}
-  spiderRecipe: {fileID: 0}
-  weirdSpiderRecipe: {fileID: 0}
-  wendigoConstantRecipe: {fileID: 0}
-  wendigoRecipe: {fileID: 0}
-  fourArmRecipe: {fileID: 0}
+  recipes:
+  - {fileID: 11400000, guid: 77e2eebb9b643a043a1565541aca9189, type: 2}
+  - {fileID: 11400000, guid: 34955a46811b84349aa9c1e4782bdc61, type: 2}
+  - {fileID: 11400000, guid: e94c388a0e9501e40a18f0768113b49f, type: 2}
+  - {fileID: 11400000, guid: e378c5aeebcdd2146a1bc254360abcdc, type: 2}
+  - {fileID: 11400000, guid: aeed2667a55fb8f4da3c6778d1c47c7d, type: 2}
+  - {fileID: 11400000, guid: 2ec7c08bd5cfe284490159fcd7f2589c, type: 2}
+  - {fileID: 11400000, guid: b97a0d9487b2e984abe78daf6511e4bc, type: 2}
+  - {fileID: 11400000, guid: 6b1b70d114be80d46a014565c8bf7fc6, type: 2}
+  - {fileID: 11400000, guid: b8d942c2455ebb34c8aace6364f9b6a2, type: 2}
+  - {fileID: 11400000, guid: 13511830411d1ca4289974838946cd27, type: 2}
+  - {fileID: 11400000, guid: 0921d8c0ec83abb41831ca0f3dd419bf, type: 2}
+  defaultRecipe: {fileID: 11400000, guid: 9e8f5a01c13ab4c44b63781ffaab5070, type: 2}
+  spiderRecipe: {fileID: 11400000, guid: 2ec7c08bd5cfe284490159fcd7f2589c, type: 2}
+  weirdSpiderRecipe: {fileID: 11400000, guid: 851a344f1e0fde04c83d0f7e53e8908d, type: 2}
+  wendigoConstantRecipe: {fileID: 11400000, guid: b1a526ac2ff871f4990a98b54ae43967,
+    type: 2}
+  wendigoRecipe: {fileID: 11400000, guid: 10928912ce255554bbd432fa0b0ee004, type: 2}
+  fourArmRecipe: {fileID: 11400000, guid: 2585f0b940d6a7b41b0b972791299b4b, type: 2}
+  HeadWingsConstantRecipe: {fileID: 11400000, guid: 04dafe751855adf4aa88cb59862adc9f,
+    type: 2}
+  HeadWingsRecipe: {fileID: 11400000, guid: 1f5bdb201cfb4f54fac5d94f192fabfd, type: 2}
+  TwinRecipe: {fileID: 11400000, guid: c5588a4412f98734594743d8240ab20b, type: 2}
+  HayHeadRecipe: {fileID: 11400000, guid: 2fb8908c12a13714eb830711068fe587, type: 2}
+  ArmAliveRecipe: {fileID: 11400000, guid: 5dc42cfb55f584d45b222754da2a33b7, type: 2}

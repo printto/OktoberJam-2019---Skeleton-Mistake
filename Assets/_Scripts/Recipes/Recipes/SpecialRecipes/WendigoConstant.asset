@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bcf7345997103b4eb7fb0fdc1098bb8, type: 3}
-  m_Name: Hydra
+  m_Name: WendigoConstant
   m_EditorClassIdentifier: 
   successSprite: {fileID: 0}
   recipeCode:
-  - {fileID: 11400000, guid: 5fccd070fd0b18a4aba4d411e9002ad1, type: 2}
   - {fileID: 11400000, guid: e8b93fdeaa566f0479f93cdc88a3d7f1, type: 2}
-  - {fileID: 11400000, guid: f869a0f5be11b5845ba67019426d80ba, type: 2}
-  - {fileID: 11400000, guid: 4a123e3f89b25c5428be4646e54143ab, type: 2}
-  - {fileID: 11400000, guid: 4bf7a5ea236449841acd32d956364b0c, type: 2}
-  creatureName: Hydra
+  - {fileID: 11400000, guid: 737224ee99bf04a43b777219d297832f, type: 2}
+  - {fileID: 11400000, guid: e65ccbcd9071fb04e8dd22fd2a946802, type: 2}
+  creatureName: WendigoConstants
   description: 

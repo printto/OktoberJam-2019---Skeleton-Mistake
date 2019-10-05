@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Phoenix
   m_EditorClassIdentifier: 
   successSprite: {fileID: 0}
-  recipeCode: []
-  creatureName: 
+  recipeCode:
+  - {fileID: 11400000, guid: f869a0f5be11b5845ba67019426d80ba, type: 2}
+  - {fileID: 11400000, guid: 704a6b1c21420574fa7b34d179078f1e, type: 2}
+  - {fileID: 11400000, guid: 793d694537138d941ba3ec0d2e0d34ce, type: 2}
+  - {fileID: 11400000, guid: 5a3a3b5d69d2d93499e2b5797df77d3b, type: 2}
+  creatureName: Phoenix
   description: 
