@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CollectionInit : MonoBehaviour
 {
@@ -15,12 +16,13 @@ public class CollectionInit : MonoBehaviour
         {
             newObj = (GameObject)Instantiate(preFab, transform);
             newObj.GetComponent<DexItem>().recipe = results[i];
+            //newObj.GetComponentInChildren<Text>().text = results[i].creatureName;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

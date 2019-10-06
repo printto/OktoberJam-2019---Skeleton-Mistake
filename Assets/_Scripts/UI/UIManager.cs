@@ -72,7 +72,7 @@ public class UIManager
             {
                 IngredientManager.Instance.ingredientList.Add(selectedItem.ingredientScript);
                 OnDragItem.gameObject.SetActive(!OnDragItem.gameObject.activeSelf);
-                Managers.Instance.m_CameraShake.TriggerShake();
+                Managers.Instance.m_CameraShake.TriggerShake(1f,10f);
                 selectedItem.GetComponent<Image>().color = new Color(0, 0, 0);
                 selectedItem.enabled = false;
                 usedItem.Add(selectedItem);
@@ -113,6 +113,7 @@ public class UIManager
         {
 
             Mix();
+            Managers.Instance.m_CameraShake.TriggerShake(2.5f,30f);
             ResetItem();
         }
 

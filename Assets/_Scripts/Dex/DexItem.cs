@@ -19,6 +19,7 @@ public class DexItem : MonoBehaviour
         else
         {
             gameObject.GetComponent<Image>().color = new Color(255, 255, 255);
+            gameObject.GetComponentInChildren<Text>().text = recipe.creatureName;
 
         }
     }

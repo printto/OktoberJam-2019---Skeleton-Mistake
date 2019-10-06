@@ -34,8 +34,9 @@ public class CameraShake
         }
     }
 
-    public void TriggerShake()
+    public void TriggerShake(float duration, float shakePower)
     {
-        shakeDuration = 1f;
+        shakeDuration = duration;
+        shakeMagnitude = shakePower;
     }
 }
