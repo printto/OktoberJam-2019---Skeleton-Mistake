@@ -19,11 +19,10 @@ public class IngredientObject : MonoBehaviour, IPointerDownHandler, IDragHandler
     public void OnPointerDown(PointerEventData eventData)
     {
         Sprite currentImage = this.GetComponent<Image>().sprite;
-        Debug.Log("sd");
         float OFFSET = 50f;
         currentObjectPosition = this.transform.position;
         currentObjectPosition.x = currentObjectPosition.x + OFFSET;
-        currentObjectPosition.z = currentObjectPosition.z - OFFSET;
+        currentObjectPosition.z = currentObjectPosition.z - 100;
         Managers.Instance.m_UIManager.OnDragItem.gameObject.SetActive(!Managers.Instance.m_UIManager.OnDragItem.gameObject.activeSelf);
 
         Managers.Instance.m_UIManager.OnDragItem.position = currentObjectPosition;
@@ -32,7 +31,7 @@ public class IngredientObject : MonoBehaviour, IPointerDownHandler, IDragHandler
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        Managers.Instance.m_UIManager.SelectedItemHandleMouseDrop(eventData, ingredientScript);
+        Managers.Instance.m_UIManager.SelectedItemHandleMouseDrop(eventData, this);
     }
 
     void Start()

@@ -7,9 +7,12 @@ using UnityEngine.UI;
 public class UIManager
 {
     public Transform PanelTransform;
+    public Transform RootCanvas;
     public Button[] buttons;
     public Transform OnDragItem { get; set; }
     public Transform Pot { get; set; }
+    
+    public IMenu subMenu;
 
     public UIManager()
     {
@@ -18,15 +21,18 @@ public class UIManager
 
     public void Start(GameObject parentCanvas)
     {
+        RootCanvas = parentCanvas.transform;
         PanelTransform = parentCanvas.transform.Find("Canvas/Panel");
         OnDragItem = PanelTransform.Find("Top/SelectedItem");
         Pot = PanelTransform.Find("Pot");
         InitButton();
+
+
     }
 
     public void Update()
     {
-       
+
     }
 
     public void SelectedItemHandleMouseDrag(PointerEventData eventData)
@@ -34,7 +40,7 @@ public class UIManager
         OnDragItem.position = eventData.position;
     }
 
-    public void SelectedItemHandleMouseDrop(PointerEventData eventdata, IngredientBase item)
+    public void SelectedItemHandleMouseDrop(PointerEventData eventdata, IngredientObject selectedItem)
     {
         BoxCollider2D potCollider = Pot.GetComponent<BoxCollider2D>();
         BoxCollider2D selectedItemCollider = OnDragItem.GetComponent<BoxCollider2D>();
@@ -44,10 +50,11 @@ public class UIManager
 
         if (potCollider.bounds.Intersects(selectedItemCollider.bounds))
         {
-            IngredientManager.Instance.ingredientList.Add(item);
+            IngredientManager.Instance.ingredientList.Add(selectedItem.ingredientScript);
             OnDragItem.gameObject.SetActive(!OnDragItem.gameObject.activeSelf);
             Managers.Instance.m_CameraShake.TriggerShake();
-
+            selectedItem.GetComponent<Image>().color = new Color(0, 0, 0);
+            selectedItem.enabled = false;
         }
         else
         {
@@ -60,7 +67,6 @@ public class UIManager
     private void InitButton()
     {
         buttons = PanelTransform.GetComponentsInChildren<Button>();
-        Debug.Log("sad");
         foreach (Button button in buttons)
         {
             button.onClick.AddListener(() => OnClickBoneSelectionButton(button));
@@ -70,9 +76,23 @@ public class UIManager
 
     private void OnClickBoneSelectionButton(Button button)
     {
-        Debug.Log(button.name);
+        if (button.name.Equals("CollectionButton"))
+        {
+            subMenu = new CollectionMenu(RootCanvas);
+            subMenu.Show();
+        }
+        else if (button.name.Equals("MixButton"))
+        {
+            Mix();
+        }
 
     }
+
+    private void Mix()
+    {
+        PanelTransform.Find("Boom").gameObject.SetActive(true);
+    }
+
 
 
 }
