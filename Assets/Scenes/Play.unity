@@ -6849,7 +6849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ff337c5881490e049973d44c50f0cc9b, type: 3}
       propertyPath: m_SortingOrder
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ff337c5881490e049973d44c50f0cc9b, type: 3}
       propertyPath: m_SortingLayerID
@@ -6861,15 +6861,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 21200002, guid: ff337c5881490e049973d44c50f0cc9b, type: 3}
       propertyPath: m_SortingOrder
-      value: 10
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200002, guid: ff337c5881490e049973d44c50f0cc9b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 236356831
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200002, guid: ff337c5881490e049973d44c50f0cc9b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 21200004, guid: ff337c5881490e049973d44c50f0cc9b, type: 3}
       propertyPath: m_SortingOrder
-      value: 11
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: ff337c5881490e049973d44c50f0cc9b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 236356831
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: ff337c5881490e049973d44c50f0cc9b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 21200006, guid: ff337c5881490e049973d44c50f0cc9b, type: 3}
       propertyPath: m_SortingOrder
-      value: 11
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200006, guid: ff337c5881490e049973d44c50f0cc9b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 236356831
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200006, guid: ff337c5881490e049973d44c50f0cc9b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 21200008, guid: ff337c5881490e049973d44c50f0cc9b, type: 3}
       propertyPath: m_SortingOrder
