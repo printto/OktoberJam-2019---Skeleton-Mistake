@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: Hydra
   m_EditorClassIdentifier: 
   successSprite: {fileID: 0}
-  recipeCode: []
-  creatureName: 
+  recipeCode:
+  - {fileID: 11400000, guid: 5fccd070fd0b18a4aba4d411e9002ad1, type: 2}
+  - {fileID: 11400000, guid: e8b93fdeaa566f0479f93cdc88a3d7f1, type: 2}
+  - {fileID: 11400000, guid: f869a0f5be11b5845ba67019426d80ba, type: 2}
+  - {fileID: 11400000, guid: 4a123e3f89b25c5428be4646e54143ab, type: 2}
+  - {fileID: 11400000, guid: 4bf7a5ea236449841acd32d956364b0c, type: 2}
+  creatureName: Hydra
   description: 

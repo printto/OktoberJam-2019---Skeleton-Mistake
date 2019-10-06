@@ -18,5 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1095fd081bb07d54c93cccb012b2378b, type: 2}
   - {fileID: 11400000, guid: 4b0cccaa974f21648abc27980f0ef339, type: 2}
   - {fileID: 11400000, guid: 793d694537138d941ba3ec0d2e0d34ce, type: 2}
-  creatureName: Snake
+  creatureName: Nessie
   description: 

@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bcf7345997103b4eb7fb0fdc1098bb8, type: 3}
   m_Name: Dragon
   m_EditorClassIdentifier: 
-  successSprite: {fileID: 0}
-  recipeCode: []
-  creatureName: 
+  successSprite: {fileID: 21300000, guid: b743dc27f8288a940bf401e21a4d637c, type: 3}
+  recipeCode:
+  - {fileID: 11400000, guid: f869a0f5be11b5845ba67019426d80ba, type: 2}
+  - {fileID: 11400000, guid: 793d694537138d941ba3ec0d2e0d34ce, type: 2}
+  - {fileID: 11400000, guid: 33a7e5bb3d643ba478ec0b5f1123651f, type: 2}
+  - {fileID: 11400000, guid: eb505236b6adc584cb7590a7dd62dc64, type: 2}
+  - {fileID: 11400000, guid: 704a6b1c21420574fa7b34d179078f1e, type: 2}
+  creatureName: Dragon
   description: 

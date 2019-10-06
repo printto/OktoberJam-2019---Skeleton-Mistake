@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2feba69b0657fcc4682ecf51e91b5e0b, type: 3}
   m_Name: Extra1
   m_EditorClassIdentifier: 
-  ingredientSprite: {fileID: 21300000, guid: 85671ce089eb12741b2f14434e217a8f, type: 3}
+  ingredientSprite: {fileID: 21300000, guid: 1abbf2fbc9650a84aa1cfa83672b6c77, type: 3}
   ingredientName: Extra1
   description: 
   ingredientType: 6

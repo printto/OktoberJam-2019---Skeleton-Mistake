@@ -43,4 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26fa64bb738616549a519de8ada5e9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookbook: {fileID: 11400000, guid: 81b5298d5ba16df4c804f73c4f1968e6, type: 2}
+  cookbook: {fileID: 11400000, guid: a93d8b5cb4a5b8544b48f218309efd0c, type: 2}

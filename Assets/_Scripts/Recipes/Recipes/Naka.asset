@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Naka
   m_EditorClassIdentifier: 
   successSprite: {fileID: 0}
-  recipeCode: []
-  creatureName: 
+  recipeCode:
+  - {fileID: 11400000, guid: e8b93fdeaa566f0479f93cdc88a3d7f1, type: 2}
+  - {fileID: 11400000, guid: 717c4ecb54fb9c142a3f3c5399e5b0d7, type: 2}
+  creatureName: Naka
   description: 

@@ -8,7 +8,7 @@ public class CameraShake
 
     private float shakeDuration = 0f;
 
-    private float shakeMagnitude = 20f;
+    private float shakeMagnitude = 10f;
 
     private float dampingSpeed = 1.5f;
 
