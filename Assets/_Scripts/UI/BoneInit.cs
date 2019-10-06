@@ -15,6 +15,8 @@ public class BoneInit : MonoBehaviour
         {
             newObj = (GameObject)Instantiate(preFab, transform);
             newObj.GetComponentInChildren<IngredientObject>().ingredientScript = Bones[i];
+            newObj.AddComponent<ToolTip>();
+            newObj.GetComponent<ToolTip>().toolTipInfo = newObj.GetComponentInChildren<IngredientObject>().ingredientScript.ingredientName;
         }
     }
 
