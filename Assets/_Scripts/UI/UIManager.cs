@@ -121,6 +121,7 @@ public class UIManager
     private void Mix()
     {
 
+
         DexList.Instance.dexList.Add(RootCanvas.Find("CookbookSystem").GetComponent<RecipeManager>().generateResult());
         PanelTransform.Find("Pot/Boom").gameObject.SetActive(true);
         LastBoomParticle = PanelTransform.Find("Pot/Boom").GetComponentInChildren<ParticleSystem>();

@@ -8,6 +8,7 @@ public class RealtimeCookResultImage : MonoBehaviour
 
     List<IngredientBase> ingredientList;
     RecipeManager cookbook;
+    public Text monsterName;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class RealtimeCookResultImage : MonoBehaviour
         if (recipe.successSprite != null)
         {
             GetComponent<Image>().sprite = recipe.successSprite;
+            monsterName.text = recipe.creatureName;
         }
         Debug.Log(recipe.creatureName);
 
