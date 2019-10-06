@@ -29,7 +29,7 @@ public class RealtimeCookResultImage : MonoBehaviour
             GetComponent<Image>().sprite = recipe.successSprite;
             monsterName.text = recipe.creatureName;
         }
-        Debug.Log(recipe.creatureName);
+        //Debug.Log(recipe.creatureName);
 
     }
 
