@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bcf7345997103b4eb7fb0fdc1098bb8, type: 3}
   m_Name: SeaSerpent
   m_EditorClassIdentifier: 
-  successSprite: {fileID: 0}
+  successSprite: {fileID: 21300000, guid: f2638d2add0995640ab3d60b84ec55fb, type: 3}
   recipeCode:
   - {fileID: 11400000, guid: 4a123e3f89b25c5428be4646e54143ab, type: 2}
   - {fileID: 11400000, guid: 717c4ecb54fb9c142a3f3c5399e5b0d7, type: 2}
