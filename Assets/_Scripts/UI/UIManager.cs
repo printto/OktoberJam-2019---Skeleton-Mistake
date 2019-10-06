@@ -11,9 +11,14 @@ public class UIManager
     public Button[] buttons;
     public Transform OnDragItem { get; set; }
     public Transform Pot { get; set; }
-    
+
+
+    public List<IngredientObject> usedItem = new List<IngredientObject>();
+
+
     public IMenu subMenu;
 
+    ParticleSystem LastBoomParticle;
     public UIManager()
     {
 
@@ -32,7 +37,20 @@ public class UIManager
 
     public void Update()
     {
+        if (LastBoomParticle != null)
+        {
+            if (LastBoomParticle.isStopped)
+            {
+                if (subMenu.GetType() == typeof(ResultMenu))
+                {
+                    Debug.Log("Show");
+                    subMenu.Show();
+                    LastBoomParticle = null;
+                    PanelTransform.Find("Pot/Boom").gameObject.SetActive(false);
 
+                }
+            }
+        }
     }
 
     public void SelectedItemHandleMouseDrag(PointerEventData eventData)
@@ -50,11 +68,21 @@ public class UIManager
 
         if (potCollider.bounds.Intersects(selectedItemCollider.bounds))
         {
-            IngredientManager.Instance.ingredientList.Add(selectedItem.ingredientScript);
-            OnDragItem.gameObject.SetActive(!OnDragItem.gameObject.activeSelf);
-            Managers.Instance.m_CameraShake.TriggerShake();
-            selectedItem.GetComponent<Image>().color = new Color(0, 0, 0);
-            selectedItem.enabled = false;
+            if (IngredientManager.Instance.ingredientList.Count != 5)
+            {
+                IngredientManager.Instance.ingredientList.Add(selectedItem.ingredientScript);
+                OnDragItem.gameObject.SetActive(!OnDragItem.gameObject.activeSelf);
+                Managers.Instance.m_CameraShake.TriggerShake();
+                selectedItem.GetComponent<Image>().color = new Color(0, 0, 0);
+                selectedItem.enabled = false;
+                usedItem.Add(selectedItem);
+            }
+            else
+            {
+                OnDragItem.gameObject.SetActive(!OnDragItem.gameObject.activeSelf);
+
+            }
+
         }
         else
         {
@@ -83,14 +111,32 @@ public class UIManager
         }
         else if (button.name.Equals("MixButton"))
         {
+            
             Mix();
+            ResetItem();
         }
 
     }
 
     private void Mix()
     {
-        PanelTransform.Find("Boom").gameObject.SetActive(true);
+        PanelTransform.Find("Pot/Boom").gameObject.SetActive(true);
+        LastBoomParticle = PanelTransform.Find("Pot/Boom").GetComponentInChildren<ParticleSystem>();
+        subMenu = new ResultMenu(RootCanvas);
+
+    }
+
+    private void ResetItem()
+    {
+
+        usedItem.ForEach(e =>
+        {
+            e.enabled = true;
+            e.GetComponent<Image>().color = new Color(255, 255, 255);
+
+        });
+        usedItem.Clear();
+
     }
 
 
