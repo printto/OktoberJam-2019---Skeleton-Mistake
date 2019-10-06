@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bcf7345997103b4eb7fb0fdc1098bb8, type: 3}
   m_Name: NormalSpider
   m_EditorClassIdentifier: 
-  successSprite: {fileID: 0}
+  successSprite: {fileID: 21300000, guid: e789c66787543144bbda57cf5f70160d, type: 3}
   recipeCode:
   - {fileID: 11400000, guid: 4bf7a5ea236449841acd32d956364b0c, type: 2}
   - {fileID: 11400000, guid: 4b50c1987a67258488ccc42f6164dad4, type: 2}
