@@ -26,10 +26,13 @@ public class ToolTip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         if(toolTipObject != null)
         {
+            /*
             if (isOver) // Starting point, direction, distance, layer to interact with
             {
                 ShowInfo(toolTipInfo); //Pass Name Of Object To Method
             }
+            */
+            toolTipObject.transform.position = Input.mousePosition + new Vector3(180f,-50f,0f); //Move Text To Mouse's Position
             /*
             else
             {
@@ -42,13 +45,13 @@ public class ToolTip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void OnPointerEnter(PointerEventData eventData)
     {
         //Debug.Log("Mouse enter");
-        isOver = true;
+        ShowInfo(toolTipInfo);
     }
-
+    
     public void OnPointerExit(PointerEventData eventData)
     {
         //Debug.Log("Mouse exit");
-        isOver = false;
+        ShowInfo("");
     }
 
     void ShowInfo(string name)
